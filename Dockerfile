@@ -22,3 +22,5 @@ RUN apt-get update -yq \
  && apt-get clean \
  && rm -rf /tmp/* /var/tmp/* \
  && rm -rf /var/lib/apt/lists
+RUN python3 -c 'import grpc; print(grpc.__version__)' \
+ && python3 -c 'import numpy; print(numpy.__version__)'
