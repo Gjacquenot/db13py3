@@ -28,7 +28,8 @@ jobs:
 
       # Define image name
       - name: Set up image name
-        run: echo "IMAGE_NAME=sirehna/xdyn-debian13-py313-build" >> $GITHUB_ENV
+        # run: echo "IMAGE_NAME=sirehna/xdyn-debian13-py313-build" >> $GITHUB_ENV
+        run: echo "IMAGE_NAME=sirehna/xdyn-debian13-py313-base-test" >> $GITHUB_ENV
 
       # Build and push Docker image
       - name: Build and push Docker image
