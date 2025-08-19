@@ -4,6 +4,5 @@ RUN apt-get update -yq \
  && apt-get install --yes --no-install-recommends \
     python3 \
     python3-pip
-RUN python3 -m pip install --break-system-packages -U pip \
-    && python3 -m pip install --break-system-packages \
+RUN python3 -m pip install --break-system-packages \
        numpy>=2.0.0
