@@ -1,6 +1,5 @@
 ARG IMAGE_PREFIX=""
 FROM ${IMAGE_PREFIX}debian:trixie-slim
-FROM ${IMAGE_PREFIX}${DOCKER_BASE_IMAGE}
 RUN apt-get update -yq \
  && apt-get install --yes --no-install-recommends \
     make \
