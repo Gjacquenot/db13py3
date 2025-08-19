@@ -15,8 +15,8 @@ RUN apt-get update -yq \
     grpcio \
     protobuf \
     numpy>=2.0.0 \
- && apt-get purge --auto-remove python3-dev \
- && apt-get purge --auto-remove g++ \
+ && apt-get purge --auto-remove --yes python3-dev \
+ && apt-get purge --auto-remove --yes g++ \
  && apt-get autoclean \
  && apt-get autoremove \
  && apt-get clean \
