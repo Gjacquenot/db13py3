@@ -12,8 +12,8 @@ RUN apt-get update -yq \
     g++ \
  && python3 --version \
  && python3 -m pip install --break-system-packages \
-    grpcio==1.66.1 \
-    protobuf==5.28.0 \
+    grpcio \
+    protobuf \
     numpy>=2.0.0 \
  && apt-get purge --auto-remove python3-dev \
  && apt-get purge --auto-remove g++ \
